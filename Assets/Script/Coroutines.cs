@@ -8,11 +8,11 @@ public class Coroutines : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine("Test");
+            StartCoroutine("Printing");
         }
     }
 
-    IEnumerator Test()
+    IEnumerator Printing()
     {
         print("I am starting the coroutine");
 
