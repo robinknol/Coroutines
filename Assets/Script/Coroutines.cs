@@ -14,14 +14,17 @@ public class Coroutines : MonoBehaviour
 
     IEnumerator Test()
     {
-        print("Ik start nu de coroutine");
-
-        yield return new WaitForSeconds(0.5f);
-        
-        print("coroutine update");
+        print("I am starting the coroutine");
 
         yield return new WaitForSeconds(0.5f);
 
-        print("coroutine einde");
+        for (int i = 1; i <= 10; i++)
+        { 
+            print("coroutine update" + " " + i);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        print("coroutine end");
     }
 }
